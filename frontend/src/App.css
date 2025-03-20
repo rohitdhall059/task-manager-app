@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #0000ff;
+    --text-color: #ffffff;
+    --dark-red: darkred;
+    --gray: gray;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    margin-right: 5px;
+    padding: 8px;
+  }
+  
+  .add-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+  
+  .complete-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .clear-btn {
+    background-color: var(--dark-red);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive design tweaks */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }  
